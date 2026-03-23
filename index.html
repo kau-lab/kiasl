@@ -319,10 +319,67 @@
                 <!-- To make this form functional, sign up at-->
                 <!-- https://startbootstrap.com/solution/contact-forms-->
                 <!-- to get an API token!-->
- <form action="https://formspree.io/f/mvzwjvor" method="POST">
-  <input type="email" name="email" placeholder="email" required>
-  <textarea name="message" placeholder="message" required></textarea>
-  <button type="submit">Send</button>
+<form action="https://formspree.io/f/mvzwjvor" method="POST" style="background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 15px;
+    width: 320px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;">
+  <h2 style="text-align: center;
+    color: white;
+    margin-bottom: 10px;">문의하기</h2>
+
+  <label stlye=" color: white;
+    font-size: 14px;">이름</label>
+  <input type="text" name="name" placeholder="홍길동" required style="padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;">
+
+  <label stlye=" color: white;
+    font-size: 14px;>전화번호</label>
+  <input type="tel" name="phone" placeholder="010-1234-5678" required style="padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;">
+
+  <label stlye=" color: white;
+    font-size: 14px;>이메일</label>
+  <input type="email" name="email" placeholder="example@email.com" required style="padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;">
+
+  <label stlye=" color: white;
+    font-size: 14px;>메시지</label>
+  <textarea name="message" placeholder="내용을 입력하세요" required style="padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;resize: none;
+    height: 100px;"></textarea>
+
+  <input type="hidden" name="_subject" value="새 문의가 도착했습니다!" style="padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;">
+
+  <button type="submit" style=" margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #6a82fb;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;">보내기</button>
 </form>
             </div>
         </section>
