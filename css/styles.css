@@ -11316,22 +11316,27 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.py-20 {
-    padding-block: calc(var(--spacing) * 20);
+.bg-accent {
+    background-color: var(--accent);
 }
-.bg-white {
-    background-color: var(--color-white);
+.rounded-full {
+    border-radius: 3.40282e38px;
 }
-* {
-    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-    --tw-duration: .2s;
-    transition-duration: .2s;
+.w-4 {
+    width: calc(var(--spacing) * 4);
 }
-@supports (color:color-mix(in lab,red,red)) {
-    * {
-        outline-color: 
-color-mix(in oklab, var(--ring) 50%, transparent);
-    }
+.h-4 {
+    height: calc(var(--spacing) * 4);
+}
+
+.font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+}
+.text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+}
+.mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
 }
